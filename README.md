@@ -1,12 +1,12 @@
-# Custom Catalogue Applications
+# DKP Custom Catalog Application: JupyterHub
 
-Your custom catalogue has been built and is ready to deploy to DKP. Set the relevant namespace for either workspace or project, depending on the scope you chose, as an environmental variable:
+Your custom catalog is ready to deploy to DKP. Set the namespace to the relevant project, as an environmental variable:
 
 ```bash
 export NAMESPACE=[your_namespace]
 ````
 
-Copy and past the following into the terminal to deploy the catoalogue:
+Copy and paste the following into the terminal to deploy the catalog:
 
 ```bash
 kubectl apply -f - <<EOF
@@ -22,7 +22,7 @@ spec:
   interval: 1m0s
   ref:
     branch: master
-  timeout: 20s
+  timeout: 1m0s
   url: https://github.com/bovan01/ajb-juppy
 EOF
 ```
