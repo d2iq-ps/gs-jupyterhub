@@ -13,7 +13,7 @@ kubectl apply -f - <<EOF
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: ajb-juppy
+  name: gs-jupyterhub
   namespace: ${NAMESPACE}
   labels:
     kommander.d2iq.io/gitapps-gitrepository-type: catalog
@@ -23,6 +23,6 @@ spec:
   ref:
     branch: master
   timeout: 1m0s
-  url: https://github.com/bovan01/ajb-juppy
+  url: https://github.com/d2iq-ps/gs-jupyterhub
 EOF
 ```
