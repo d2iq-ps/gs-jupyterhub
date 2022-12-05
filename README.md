@@ -1,6 +1,6 @@
 # DKP Custom Catalog Application: JupyterHub
 
-Your custom catalog is ready to deploy to DKP. Set the namespace to the relevant project, as an environmental variable:
+Your custom catalog is ready to deploy to DKP. Set the namespace to the relevant project as an environmental variable:
 
 ```bash
 export NAMESPACE=[your_namespace]
