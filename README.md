@@ -1,12 +1,12 @@
 # DKP Custom Catalog Application: JupyterHub
 
-Your custom catalog is ready to deploy to DKP. Set the namespace to the relevant project as an environmental variable:
+1. Set the K8s context to the DKP management cluster, then set the namespace to the relevant project as an environmental variable:
 
 ```bash
 export NAMESPACE=[your_namespace]
 ````
 
-Copy and paste the following into the terminal to deploy the catalog:
+Copy and paste the following manifest into the terminal to deploy to the DKP catalog:
 
 ```bash
 kubectl apply -f - <<EOF
